@@ -1,6 +1,6 @@
 {
   "name": "vue-animated-counter",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -14,7 +14,7 @@
   "homepage": "https://github.com/Dennis-Mwea/animated-counter",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Dennis-Mwea/animated-counter"
+    "url": "git+https://github.com/Dennis-Mwea/animated-counter.git"
   },
   "scripts": {
     "dev": "vite",
