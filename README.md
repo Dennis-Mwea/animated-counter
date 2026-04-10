@@ -31,7 +31,7 @@ yarn add animated-counter-vue
 
 **Basic Demo:**
 
-Codesandbox Link: https://codesandbox.io/p/sandbox/clever-water-v5nwwx
+Codesandbox Link: https://codesandbox.io/p/sandbox/gg3tvl
 
 ```vue
 <script setup lang="ts">
