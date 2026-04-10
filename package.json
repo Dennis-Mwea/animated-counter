@@ -1,6 +1,6 @@
 {
   "name": "animated-counter-vue",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "private": false,
   "type": "module",
   "types": "dist/index.d.ts",
@@ -23,9 +23,13 @@
   },
   "files": ["dist"],
   "exports": {
-    "import": "./dist/index.es.js",
-    "require": "./dist/index.cjs.js",
-    "types": "./dist/index.d.ts"
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.cjs.js",
+      "types": "./dist/index.d.ts",
+      "style": "./dist/animated-counter-vue.css"
+    },
+    "./dist/animated-counter-vue.css": "./dist/animated-counter-vue.css"
   },
   "keywords": [
     "vue",
