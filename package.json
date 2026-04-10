@@ -1,6 +1,6 @@
 {
   "name": "animated-counter-vue",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": false,
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -21,6 +21,12 @@
     "preview": "vite preview",
     "build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
   },
+  "files": ["dist"],
+  "keywords": [
+    "vue",
+    "counter",
+    "animated counter"
+  ],
   "dependencies": {
     "vue": "^3.5.31"
   },

@@ -2,14 +2,14 @@
 
 A lightweight React component for beautifully animated incrementation & decrementation of a state integer value. Inspired by [react-animated-counter](https://github.com/TuckerMassad/react-animated-counter/tree/main) counter.
 
-![vue-animated-counter demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2N4ZG5mcXE1ZWdsZzQ4bnlxdXlvcGcwamQzcWhmNGNvaGNoem14aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6qomEsKHcyf6R1YmBs/source.gif)
+![animated-counter-vue demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb2N4ZG5mcXE1ZWdsZzQ4bnlxdXlvcGcwamQzcWhmNGNvaGNoem14aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6qomEsKHcyf6R1YmBs/source.gif)
 
 Powering today's most innovative web applications like [https://kalshi.com](https://kalshi.com), [https://financhle.com](https://financhle.com), and others.
 
 ## Installation
 
 ```shell
-yarn add vue-animated-counter
+yarn add animated-counter-vue
 ```
 
 ## Usage
@@ -35,13 +35,16 @@ Codesandbox Link: https://codesandbox.io/p/sandbox/clever-water-v5nwwx
 
 ```vue
 <script setup lang="ts">
-  import AnimatedCounter from 'vue-animated-counter';
+import AnimatedCounter from 'animated-counter-vue';
+import { ref } from 'vue';
+  
+const value = ref(50);
 </script>
 
 <template>
   <main>
     <AnimatedCounter
-      :value="50"
+      :value="value"
       :include-commas="false"
       :include-decimals="false"
       :digit-styles="{
@@ -61,14 +64,20 @@ Codesandbox Link: https://codesandbox.io/p/sandbox/clever-water-v5nwwx
       font-size="24px"
       increment-color="currentColor"
       decrement-color="currentColor"
-    />
+    ></AnimatedCounter>
+
+    <div>
+      <button @click="value--">Decrement</button>
+      
+      <button @click="value++">Increment</button>
+    </div>
   </main>
 </template>
 ```
 
 **Output:**
 
-![vue-animated-counter demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhwbnF0NDU1ZmhsMHRnZnFwdzVycXU5b2MzYnpxZ3ZtZzFhNG0xNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N3Xsj09Gp9GbrKF86E/giphy.gif)
+![animated-counter-vue demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzhwbnF0NDU1ZmhsMHRnZnFwdzVycXU5b2MzYnpxZ3ZtZzFhNG0xNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/N3Xsj09Gp9GbrKF86E/giphy.gif)
 
 **With `recharts` Demo:**
 
@@ -76,4 +85,4 @@ Codesandbox Link: https://codesandbox.io/s/suspicious-morning-rx60sm?file=/src/A
 
 **Output:**
 
-![vue-animated-counter recharts demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXFoaHkzOG5oMG05aTF6dHo0NHRmOGxmdjQ0Zm1xdGdvNWprNDcyOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IJP2ng53lyeF5QXi5T/giphy.gif)
+![animated-counter-vue recharts demo](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXFoaHkzOG5oMG05aTF6dHo0NHRmOGxmdjQ0Zm1xdGdvNWprNDcyOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IJP2ng53lyeF5QXi5T/giphy.gif)
